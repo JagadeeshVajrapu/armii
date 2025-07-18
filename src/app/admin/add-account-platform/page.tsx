@@ -57,7 +57,7 @@ export default function AddAccountPlatform() {
           <form onSubmit={handleSubmit}>
             <div className="mb-8">
               <h3 className="text-lg mb-4 pb-2 border-b border-gray-200">Accounts & Platforms</h3>
-              {rows.map((row, idx) => (
+              {rows.map((row) => (
                 <div key={row.id} className="flex items-center space-x-2 mb-4">
                   <select
                     className="p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900"

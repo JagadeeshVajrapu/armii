@@ -1,13 +1,13 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { usePlatform } from '../../context/PlatformContext';
 
 export default function SetAccountPlatform() {
   const router = useRouter();
-  const { accounts, platforms, linkAccountPlatform, getAccountPlatforms, getPlatformAccounts, deleteAccount } = usePlatform();
+  const { accounts, platforms, linkAccountPlatform, deleteAccount } = usePlatform();
   
   const [selectedAccount, setSelectedAccount] = useState('');
   const [selectedPlatform, setSelectedPlatform] = useState('');
