@@ -26,12 +26,12 @@ export default function AddAccountPlatform() {
   };
 
   // Remove row
-  const handleRemoveRow = (id) => {
+  const handleRemoveRow = (id: string) => {
     setRows(rows => rows.length > 1 ? rows.filter(row => row.id !== id) : rows);
   };
 
   // Save all rows
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     for (const row of rows) {
       if (!row.platformType || !row.accountAddress) continue;

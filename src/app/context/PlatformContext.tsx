@@ -29,8 +29,8 @@ type PlatformContextType = {
   accounts: Account[];
   platforms: Platform[];
   accountPlatforms: AccountPlatform[];
-  addAccount: (account: Omit<Account, 'id'>) => void;
-  addPlatform: (platform: Omit<Platform, 'id'>) => void;
+  addAccount: (account: Omit<Account, 'id'>) => string;
+  addPlatform: (platform: Omit<Platform, 'id'>) => string;
   linkAccountPlatform: (accountId: string, platformId: string) => void;
   getAccountPlatforms: (accountId: string) => Platform[];
   getPlatformAccounts: (platformId: string) => Account[];
