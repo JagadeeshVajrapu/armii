@@ -16,7 +16,7 @@ export default function AddAccountPlatform() {
   ]);
 
   // Handle row change
-  const handleRowChange = (id, field, value) => {
+  const handleRowChange = (id: string, field: string, value: string) => {
     setRows(rows => rows.map(row => row.id === id ? { ...row, [field]: value } : row));
   };
 
